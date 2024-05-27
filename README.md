@@ -1,9 +1,9 @@
 # KYC
 Implementing KYC Using Blockchain 
 
-# KYC and MySecurityToken Smart Contracts
+# KYC and SecurityToken Smart Contracts
 
-This project consists of two smart contracts: `KYC` for Know Your Customer (KYC) verification, and `MySecurityToken`, an ERC-20 token that only allows transfers between KYC-verified Indian residents.
+This project consists of two smart contracts: `KYC` for Know Your Customer (KYC) verification, and `SecurityTokenContract`, an ERC-20 token that only allows transfers between KYC-verified Indian residents.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -11,7 +11,7 @@ This project consists of two smart contracts: `KYC` for Know Your Customer (KYC)
 - [Getting Started](#getting-started)
 - [Contracts](#contracts)
   - [KYC](#kyc)
-  - [MySecurityToken](#mysecuritytoken)
+  - [SecurityTokenContract](#mysecuritytoken)
 - [Deployment](#deployment)
 - [Interacting with the Contracts](#interacting-with-the-contracts)
   - [Completing KYC](#completing-kyc)
@@ -39,7 +39,7 @@ The `KYC` contract is responsible for verifying users.
 - `revokeKYC(address _user)`: Revokes the KYC status of the given user.
 
 ### MySecurityToken
-The `MySecurityToken` contract is an ERC-20 token that only allows transfers between KYC-verified Indian residents.
+The `SecurityTokenContract` contract is an ERC-20 token that only allows transfers between KYC-verified Indian residents.
 
 #### Functions
 - Standard ERC-20 functions like `transfer`, `balanceOf`, `approve`, etc.
@@ -59,7 +59,7 @@ The `MySecurityToken` contract is an ERC-20 token that only allows transfers bet
 4. Copy the deployed contract address.
 
 ### Step 3: Deploy the MySecurityToken Contract
-1. Select the `MySecurityToken` contract from the dropdown.
+1. Select the `SecurityTokenContract` contract from the dropdown.
 2. Paste the `KYC` contract address in the `_kycAddress` field.
 3. Click "Deploy".
 
@@ -71,7 +71,7 @@ The `MySecurityToken` contract is an ERC-20 token that only allows transfers bet
 4. Click "transact" to complete the KYC for that user.
 
 ### Transferring Tokens
-1. Expand the deployed `MySecurityToken` contract in Remix.
+1. Expand the deployed `SecurityTokenContract` contract in Remix.
 2. Mint some tokens to a KYC-approved user if needed.
 3. Locate the `transfer` function.
 4. Enter the recipient's address and the amount of tokens to transfer.
